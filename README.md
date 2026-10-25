@@ -1,8 +1,19 @@
 # WeatherApp
 
-SwiftUI weather screen for iOS 17 and later.
+Приложение прогноза погоды для iOS 17+, созданное на SwiftUI.
 
-## Скриншоты
+## Возможности
+
+- Поиск городов с автоподсказками и определение местоположения.
+- Текущая погода: температура, ощущаемая температура, влажность, ветер с компасом и порывами.
+- Давление, рассвет и закат, видимость.
+- Почасовой прогноз и прогноз на 7 дней с вероятностью осадков.
+- УФ-индекс, качество воздуха, PM2.5/PM10 и прогноз пыльцы.
+- Избранные города с сохранением на устройстве.
+- Настройки единиц измерения и формата времени.
+- Локальные уведомления о дожде или снеге.
+- Карта осадков и облачности.
+- Виджет погоды для главного экрана.
 
 <table>
   <tr>
@@ -23,39 +34,25 @@ SwiftUI weather screen for iOS 17 and later.
   </tr>
 </table>
 
-## OpenWeatherMap API
+## Источники данных
 
-The app requests current weather and city suggestions from OpenWeatherMap. Forecasts and environmental data come from Open-Meteo.
+- [OpenWeatherMap](https://openweathermap.org/api) — текущая погода и поиск городов.
+- [Open-Meteo](https://open-meteo.com/) — почасовой и недельный прогноз, УФ-индекс, качество воздуха и пыльца.
+- [RainViewer](https://www.rainviewer.com/) — радар осадков.
 
-To build the project:
+## Настройка и запуск
 
-1. Get an API key from [OpenWeatherMap](https://openweathermap.org/api).
-2. Copy `WeatherApp/Secrets.example.xcconfig` to `WeatherApp/Secrets.xcconfig`.
-3. Replace `YOUR_OPENWEATHERMAP_API_KEY` in the copied file with your key.
-4. Open `WeatherApp.xcodeproj` in Xcode and run the `WeatherApp` scheme.
+Требуются macOS 13+, Xcode 15+ и iOS 17+.
 
-`WeatherApp/Secrets.xcconfig` is excluded from version control. Never commit your personal API key. Keys included in a distributed app can be extracted; restrict the key with the provider or use a backend proxy for production.
+1. Получите API-ключ на [OpenWeatherMap](https://openweathermap.org/api).
+2. Скопируйте `WeatherApp/Secrets.example.xcconfig` в `WeatherApp/Secrets.xcconfig`.
+3. Замените `YOUR_OPENWEATHERMAP_API_KEY` на свой ключ.
+4. Откройте `WeatherApp.xcodeproj` в Xcode, выберите схему `WeatherApp` и запустите приложение на симуляторе или устройстве.
 
-The main screen shows humidity, wind speed and compass direction with gusts, pressure, sunrise and sunset times, visibility, a 12-hour forecast with hourly and daily precipitation chances, UV index, air-quality index, PM2.5/PM10 and birch/grass/ragweed pollen forecasts, plus a 7-day forecast.
+Файл `WeatherApp/Secrets.xcconfig` исключён из Git. Не публикуйте свой ключ: ключ, встроенный в приложение, можно извлечь. Ограничьте его в настройках OpenWeatherMap или используйте серверный прокси. Если ключ уже оказался в публичном доступе, отзовите его и выпустите новый.
 
-Temperature, wind-speed, and clock-format preferences can be changed from the settings button on the main screen. The settings are shared with the Home Screen widget. Settings also let users enable a local rain/snow alert when precipitation probability reaches 50% in the next hour; iOS notification permission is required.
+## Виджет и App Group
 
-Favorite cities are stored locally in `UserDefaults`. Tap the star beside the current city to save or remove it, then tap a saved city chip to load its weather.
+Виджет показывает первый город из избранного, а если избранных городов нет — последний просмотренный город. Приложение и виджет обмениваются данными через App Group `group.com.example.WeatherApp`. Для запуска на физическом устройстве включите эту App Group для обоих targets в настройках подписи Apple Developer.
 
-## Weather widget
-
-The `WeatherWidget` extension provides small and medium Home Screen widgets. It displays the first saved favorite city, or the last viewed city when there are no favorites, and updates whenever the app successfully refreshes the weather. To share that data, the app and widget use the `group.com.example.WeatherApp` App Group; enable this same App Group for both targets in the Apple Developer account when signing for a physical device.
-
-The map opens from the main weather screen and can switch between RainViewer precipitation radar and the OpenWeatherMap cloud layer.
-
-The key is added to the app bundle at build time, so it can be extracted from a distributed app. Do not rely on this as secret storage for a production app; restrict the key with the provider or use a backend proxy. If you share or publish a key, revoke it and create a replacement.
-
-## Open in VS Code
-
-Open `WeatherApp.code-workspace` from this folder. VS Code will show the app source and recommend the Swift extension.
-
-Use **Terminal → Run Build Task…** or press **Cmd+Shift+B** to build for the iOS Simulator with Xcode.
-
-## Open in Xcode
-
-Open `WeatherApp.xcodeproj`, select the `WeatherApp` scheme and an iPhone Simulator, then run the app.
+Чтобы собрать приложение из VS Code, откройте `WeatherApp.code-workspace` и запустите задачу сборки через **Terminal → Run Build Task…** или нажмите **Cmd+Shift+B**.
