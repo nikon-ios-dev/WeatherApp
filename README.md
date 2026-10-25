@@ -4,9 +4,24 @@ SwiftUI weather screen for iOS 17 and later.
 
 ## Скриншоты
 
-<p align="center">
-  <img src="Screenshots/weather-details.png" width="320" alt="Экран погоды: подробные показатели и почасовой прогноз">
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="Screenshots/weather-details.png" width="240" alt="Подробные показатели и почасовой прогноз"><br><sub>Показатели и почасовой прогноз</sub></td>
+    <td align="center"><img src="Screenshots/weather-home.png" width="240" alt="Главный экран и избранные города"><br><sub>Главный экран и избранные города</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/weather-forecast-map.png" width="240" alt="Прогноз на семь дней и переход к карте"><br><sub>Прогноз на 7 дней</sub></td>
+    <td align="center"><img src="Screenshots/weather-map.png" width="240" alt="Карта погоды"><br><sub>Карта погоды</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/air-quality-forecast.png" width="240" alt="УФ-индекс, качество воздуха, пыльца и прогноз"><br><sub>Качество воздуха и прогноз</sub></td>
+    <td align="center"><img src="Screenshots/humidity-report.png" width="240" alt="Подробный отчёт о влажности"><br><sub>Отчёт о влажности</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Screenshots/settings.png" width="240" alt="Настройки единиц и уведомлений"><br><sub>Настройки</sub></td>
+    <td></td>
+  </tr>
+</table>
 
 ## OpenWeatherMap API
 
