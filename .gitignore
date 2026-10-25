@@ -1,0 +1,6 @@
+WeatherApp/Secrets.xcconfig
+.DS_Store
+build/
+DerivedData/
+**/xcuserdata/
+*.xcuserstate

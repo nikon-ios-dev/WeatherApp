@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build WeatherApp for Simulator",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "-project",
+        "${workspaceFolder}/WeatherApp.xcodeproj",
+        "-scheme",
+        "WeatherApp",
+        "-destination",
+        "generic/platform=iOS Simulator",
+        "CODE_SIGNING_ALLOWED=NO",
+        "build"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Open WeatherApp in Xcode",
+      "type": "shell",
+      "command": "open",
+      "args": [
+        "${workspaceFolder}/WeatherApp.xcodeproj"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

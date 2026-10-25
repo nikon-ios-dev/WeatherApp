@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/xcuserdata": true
+  },
+  "search.exclude": {
+    "**/xcuserdata": true
+  }
+}
