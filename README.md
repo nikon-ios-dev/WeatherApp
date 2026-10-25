@@ -2,6 +2,12 @@
 
 SwiftUI weather screen for iOS 17 and later.
 
+## Скриншоты
+
+<p align="center">
+  <img src="Screenshots/weather-details.png" width="320" alt="Экран погоды: подробные показатели и почасовой прогноз">
+</p>
+
 ## OpenWeatherMap API
 
 The app requests current weather and city suggestions from OpenWeatherMap. Forecasts and environmental data come from Open-Meteo.
