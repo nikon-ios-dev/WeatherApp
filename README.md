@@ -17,19 +17,19 @@
 
 <table>
   <tr>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-details.png" width="240" alt="Подробные показатели и почасовой прогноз"><br><sub>Показатели и почасовой прогноз</sub></td>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-home.png" width="240" alt="Главный экран и избранные города"><br><sub>Главный экран и избранные города</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-details-rounded.png" width="240" alt="Подробные показатели и почасовой прогноз"><br><sub>Показатели и почасовой прогноз</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-home-rounded.png" width="240" alt="Главный экран и избранные города"><br><sub>Главный экран и избранные города</sub></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-forecast-map.png" width="240" alt="Прогноз на семь дней и переход к карте"><br><sub>Прогноз на 7 дней</sub></td>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-map.png" width="240" alt="Карта погоды"><br><sub>Карта погоды</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-forecast-map-rounded.png" width="240" alt="Прогноз на семь дней и переход к карте"><br><sub>Прогноз на 7 дней</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/weather-map-rounded.png" width="240" alt="Карта погоды"><br><sub>Карта погоды</sub></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/air-quality-forecast.png" width="240" alt="УФ-индекс, качество воздуха, пыльца и прогноз"><br><sub>Качество воздуха и прогноз</sub></td>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/humidity-report.png" width="240" alt="Подробный отчёт о влажности"><br><sub>Отчёт о влажности</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/air-quality-forecast-rounded.png" width="240" alt="УФ-индекс, качество воздуха, пыльца и прогноз"><br><sub>Качество воздуха и прогноз</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/humidity-report-rounded.png" width="240" alt="Подробный отчёт о влажности"><br><sub>Отчёт о влажности</sub></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/settings.png" width="240" alt="Настройки единиц и уведомлений"><br><sub>Настройки</sub></td>
+    <td align="center" bgcolor="#0b1f33"><img src="Screenshots/settings-rounded.png" width="240" alt="Настройки единиц и уведомлений"><br><sub>Настройки</sub></td>
     <td></td>
   </tr>
 </table>
